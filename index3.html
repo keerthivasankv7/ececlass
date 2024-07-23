@@ -1,0 +1,67 @@
+<html>
+    <head>
+    <style>
+        
+        body {
+  font-family: Arial;
+  padding: 10px;
+  background-image: url('https://i.pinimg.com/550x/7c/3c/61/7c3c61b99da510031047592ad55c337c.jpg');
+  
+}     
+  h1 {
+  text-align: center;
+  color: rebeccapurple;
+}
+        .fakeimg {
+            margin: auto;
+  background-color:  rgba(102, 179, 227, 0.6);
+  width: 40%;
+  padding: 20px;
+}
+.form{
+    padding: 20px;
+}
+input[type=submit] {
+  background-color: #aa0494;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+input[type=submit]:hover {
+  background-color: #a04598;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+    </style>
+    </head>
+    <body>
+        <div class="fakeimg" style="height: 400px;">
+            <h1>Slam book</h1>
+       <form>
+        <lable for="na">Name:</lable>
+        <input id="na" type="text"><br>
+        <lable for="dob">DOB:</lable> 
+        <input id="dob" type="date"><br>
+        <lable for="ge" name="ge">Gender:    </lable> 
+        <input id="ge" name="ge" type="radio">Male
+        <input id="ge" name="ge" type="radio">Female<br>
+        <label>Hobbies:</label>
+        <input type="checkbox">Cricket
+        <input type="checkbox">Football
+        <input type="checkbox">Handball<br>
+        <label id="tx">Tell me about your self😁:</label><br>
+        <textarea id="tx"></textarea>
+        <div class="row">
+        <input type="submit" value="Submit">
+    </div>
+    </form> 
+    </div>
+    </body>
+</html>
