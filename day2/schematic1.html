@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #9d02dbbb;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.logo {
+    width: 50px;
+    vertical-align: middle;
+}
+
+h1 {
+    display: inline;
+    margin-left: 1rem;
+    vertical-align: middle;
+}
+
+nav {
+    background-color: #6f3084be;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+article {
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+    align-items: normal;
+}
+
+form {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+aside {
+  width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+  background-color: lightgray;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAt2h3bgQUXqHDL_jszk41YgE0_XXRsCdVdg&s" alt="Delicious Bites Logo" class="logo">
+        <h1>Delicious Bites</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#recipes">Recipes</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home">
+            <article>
+                <h2>Welcome to Delicious Bites</h2>
+                <p>Discover mouth-watering recipes and culinary tips from around the world.</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAt2h3bgQUXqHDL_jszk41YgE0_XXRsCdVdg&s" alt="Delicious food" >
+            </article>
+        </section>
+
+        <section id="recipes">
+            <h2>Latest Recipes</h2>
+            <aside>
+                <p>Indulging in flavors that make life delicious!</p>
+                </aside>
+            <article>
+                <h3>Chocolate Cake</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9o7VCl56nwF6Hm91un3hXEq8AkYwSP3F0AA&s" alt="Chocolate Cake" width="500px" height="500px">
+                <p>This chocolate cake is rich, moist, and incredibly delicious. Perfect for any occasion!</p>
+            </article>
+            <aside>
+                <p>Foodie adventures are the best adventures!</p>
+                </aside>
+            <article>
+                <h3>Rasamalai</h3>
+                <img src="https://butteroverbae.com/wp-content/uploads/2019/10/milk-powder-rasmalai.jpg" alt="Rasamalai" width="500px" height="500px">
+                <p>A Rich creamy desert made with milk.</p>
+                
+            </article>
+        </section>
+        
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm a food enthusiast who loves to explore new recipes and share them with the world. Welcome to my food blog!</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="submit_form.php" method="post">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Delicious Bites. All rights reserved.</p>
+    </footer>
+</body>
+</html>
