@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <style>
+            .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: seashell;
+  width: 60%;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+@media screen and (max-width:1200px){
+    .grid-container {
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (max-width:800px){
+    .grid-container {
+        grid-template-columns: auto;
+    }
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <img class="grid-item" src="https://fixthephoto.com/images/content/square-format-photography-leading-lines.jpg" alt="" height="400px">
+            <img class="grid-item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTucEMevd6r4-iG1I_hOzyMSj_OdZvYuI0ZQ&s" alt="" height="400px">
+            <img class="grid-item" src="https://images.squarespace-cdn.com/content/v1/61505c55c04b0a138b337894/1645392354605-KP1A18JWX5FAWEV29EAS/image-asset.png" alt="" height="400px">
+            <img class="grid-item" src="https://fixthephoto.com/images/content/square-format-photography-leading-lines.jpg" alt="" height="400px">
+            <img class="grid-item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTucEMevd6r4-iG1I_hOzyMSj_OdZvYuI0ZQ&s" alt="" height="400px">
+            <img class="grid-item" src="https://images.squarespace-cdn.com/content/v1/61505c55c04b0a138b337894/1645392354605-KP1A18JWX5FAWEV29EAS/image-asset.png" alt="" height="400px">
+        </div>
+
+    </body>
+</html>
