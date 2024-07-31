@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 20px;
+            background-color: antiquewhite;
+            font-size: 40px;
+        }
+        #item-input {
+            margin-right: 10px;
+        }
+        button {
+            margin: 5px ;
+            color: rgba(255, 0, 0, 0.746);
+            background-color: rgba(200, 119, 61, 0.774);
+            width: 190px;
+            height: 100px;
+            font-size: 50px;
+            
+        }
+        input{
+            width: 450px;
+            height: 100px;
+            font-size: 50px;
+            background-color: azure;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Ordered List with Add and Delete</h1>
+
+    <input type="text" id="item-input" placeholder="Enter item"><br>
+    <button onclick="addItem()">Add</button>
+    <button onclick="deleteItem()">Delete</button>
+
+    <ol id="ordered-list">
+       <li>Apple</li>
+       <li>Banana</li>
+       <li>Carrot</li>
+    </ol>
+
+    <script>
+        function addItem() {
+            const itemInput = document.getElementById('item-input');
+            const itemValue = itemInput.value.trim();
+
+            const ol = document.getElementById('ordered-list');
+            const li = document.createElement('li');
+            li.textContent = itemValue;
+            
+            ol.appendChild(li);
+
+            // itemInput.value = '';
+            // itemInput.focus();
+        }
+
+        function deleteItem() {
+            const ol = document.getElementById('ordered-list');
+                ol.removeChild(ol.lastElementChild);
+             
+        }
+    </script>
+
+</body>
+</html>
